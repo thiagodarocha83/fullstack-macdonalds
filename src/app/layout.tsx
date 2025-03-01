@@ -7,13 +7,10 @@ const poppins = Poppins({
   subsets: ["latin"],
 });
 
-
-
 export const metadata: Metadata = {
   title: "FSW Donalds",
   description: "Bora finalizar esse projeto lindo!",
 };
-
 
 export default function RootLayout({
   children,
@@ -22,11 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${poppins.className} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`${poppins.className} antialiased`}>{children}</body>
     </html>
   );
 }
